@@ -1,0 +1,11 @@
+.fighter {
+vertical-align: top;
+color:black;
+}
+
+.container {
+  background-color: red;
+}
+.header-img {
+object-fit: cover;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="container" >
+    <!-- container -->
+    <input ng-model="fighterSearch"></input>
+    <!-- ng-input -->
+    <button ng-click="getFighters(fighterSearch)">search</button>
+<!-- button search -->
+<br>
+    <!-- <div class="jumbotron"> -->
+      <!-- jumbotron -->
+    <div class="fighter" ng-repeat="fighter in fighters| filter: filter">
+      <!-- ng-repeat -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+      <!-- div columns test boostrap -->
+
+    <img src="{{fighter.thumbnail}}" alt="{{fighter.first_name}}{{fighter.last_name}}" />
+    <div>{{fighter.first_name}} {{fighter.last_name}}</div>
+    <div>class: {{fighter.weight_class}}</div>
+    <div>wins: {{fighter.wins}}</div>
+    <div>losses: {{fighter.losses}}</div>
+    </div>
+  </div>
+<hr>
+
+
+
+<!-- columns test bootstrap -->
+</div>
+    <!-- jumbotron -->
+    </div>
+    <!-- container -->
+    </div>
+
+  </body>
+</html>

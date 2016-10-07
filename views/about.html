@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <!-- champions/titleholders -->
+    <button ui-sref="home" name="button">back to home</button>
+    <!-- button back to home -->
+    <input ng-model="fighterSearch"></input>
+    <!-- ng-input -->
+    <button ng-click="getFighters(fighterSearch)">search</button>
+<!-- button search -->
+<br>
+    <div ng-repeat="champion in champions | filter: filter">
+        <!-- div ng-repeat -->
+        <div class="col-sm-4 col-md-3 col-lg-3 ">
+      <!-- columns bootstrap test -->
+        <img src="{{champion.belt_thumbnail}}" alt="" />
+        <div>{{champion.weight_class}}</div>
+        <div>{{champion.first_name}}</div>
+        <div>{{champion.last_name}}</div>
+        <div>{{champion.wins}}</div>
+        <div>{{champion.losses}}</div>
+        <!-- <img src="{{champion.thumbnail}}" alt="{{champion.first_name}}{{champion.last_name}}" /> -->
+        <hr>
+<!-- columns bootstrap test -->
+      </div>
+        <!-- <ng-repeat -->
+        <div>
+</body>
+
+</html>
