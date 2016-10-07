@@ -7,5 +7,12 @@ color:black;
   background-color: red;
 }
 .header-img {
-object-fit: cover;
+  background-size:cover;
+}
+.header-img {
+  width:100%;
+}
+.hide {
+visibility: hidden;
+
 }
