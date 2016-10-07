@@ -14,7 +14,7 @@
     <button ng-click="getFighters(fighterSearch)">search</button>
 <!-- button search -->
 <br>
-player 1:{{playerOne.champion}} player 2:{{playerTwo.champion}} results: {{fightResults(playerOne,playerTwo)}}
+player 1:{{playerOne.champion}} player 2:{{playerTwo.champion}} results: {{fightResults(playerOne,playerTwo,endings)}}
     <div ng-repeat="champion in champions | filter: filter">
         <!-- div ng-repeat -->
         <div class="col-sm-4 col-md-3 col-lg-3 ">
@@ -29,7 +29,7 @@ player 1:{{playerOne.champion}} player 2:{{playerTwo.champion}} results: {{fight
 <!-- <player1 button> -->
         <button ng-click="player1(champion)" >player1</button>
           <button ng-click="player2(champion)" >player2</button>
-          <button ng-click="fightResults(playerOne,playerTwo)">fight</button>
+          <button ng-click="fightResults(playerOne,playerTwo,endings)">fight</button>
         <!-- <player 2 button> -->
         <hr>
 <!-- columns bootstrap test -->
