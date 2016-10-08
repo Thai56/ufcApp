@@ -14,18 +14,17 @@
     <button ng-click="getFighters(fighterSearch)">search</button>
 <!-- button search -->
 <br>
-player 1:{{playerOne.champion}} player 2:{{playerTwo.champion}} results: {{fightResults(playerOne,playerTwo,endings)}}
+<span class="sho">player 1:{{playerOne.champion}} player 2:{{playerTwo.champion}} results: {{fightResults(playerOne,playerTwo,endings)}}</span>
     <div ng-repeat="champion in champions | filter: filter">
         <!-- div ng-repeat -->
         <div class="col-sm-4 col-md-3 col-lg-3 ">
       <!-- columns bootstrap test -->
         <img src="{{champion.belt_thumbnail}}" alt="" />
-        <div>{{champion.weight_class}}</div>
-        <div>{{champion.first_name}}</div>
-        <div>{{champion.last_name}}</div>
-        <div>{{champion.wins}}</div>
-        <div>{{champion.losses}}</div>
-        <div class="hide">{{champion.id}}</div>
+        <div><span class="sho">{{champion.weight_class}}</span></div>
+        <div><span class="sho">{{champion.first_name}}</span></div>
+        <div><span class="sho">{{champion.wins}}</span></div>
+        <div><span class="sho">{{champion.losses}}</span></div>
+        <div class="hide">{{champion.id}}</span></div>
 <!-- <player1 button> -->
         <button ng-click="player1(champion)" >player1</button>
           <button ng-click="player2(champion)" >player2</button>

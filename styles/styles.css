@@ -1,10 +1,21 @@
+@import 'https://fonts.googleapis.com/css?family=Gurajada|Ruslan+Display|Shojumaru';
+
+.body-container {
+background-image: url("http://www.feedbackmag.com.br/wp-content/uploads/2015/02/uf.jpg");
+
+}
+.container-news {
+  align-content: center;
+
+}
 .fighter {
 vertical-align: top;
 color:black;
 }
 
 .container {
-  background-color: red;
+  /*background-color: red;*/
+  background-image: url("http://pre04.deviantart.net/5d4b/th/pre/f/2012/025/a/2/red_grunge_painted_by_madpumpkin-d4nm4yb.jpg");
 }
 .header-img {
   background-size:cover;
@@ -15,6 +26,19 @@ color:black;
 .hide {
 visibility: hidden;
 
+}
+.ruslan-text {
+  font-family: 'Ruslan Display', cursive;
+  color: #FFF;
+}
+.sho {
+  font-family: 'Shojumaru', cursive;
+  color:lightgray;
+}
+.gura {
+  font-family: 'Gurajada', serif;
+  font-size: 30px;
+  color:lightgray;
 }
 /*================================headerDirective==================================*/
 

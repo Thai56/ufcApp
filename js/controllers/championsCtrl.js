@@ -1,4 +1,4 @@
-angular.module("ufcApp").controller('aboutCtrl', function($scope, mainService) {
+angular.module("ufcApp").controller('championsCtrl', function($scope, mainService) {
 
     mainService.getTitleHolders().then(function(response) {
         $scope.champions = response;

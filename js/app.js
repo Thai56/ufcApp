@@ -11,18 +11,18 @@ controller:"homeCtrl"
 
 })
 
-.state('about', {
-url:'/about',
-templateUrl:"views/about.html",
-controller:"aboutCtrl"
+.state('champions', {
+url:'/champions',
+templateUrl:"views/champions.html",
+controller:"championsCtrl"
 
 
 })
 
-.state('contact', {
-url:'/contact',
-templateUrl:"views/contact.html",
-controller:"contactCtrl"
+.state('news', {
+url:'/news',
+templateUrl:"views/news.html",
+controller:"newsCtrl"
 
 
 })
