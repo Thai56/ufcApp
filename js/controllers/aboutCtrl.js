@@ -10,7 +10,7 @@ angular.module("ufcApp").controller('aboutCtrl', function($scope, mainService) {
         $scope.filter = input;
     }
 
-// =======================================SHIT!=================================================================
+// =======================================Fight_function=================================================================
     // random number generator
     $scope.randomNum = function() {
         var points = Math.floor((Math.random() * 10) + 1);
@@ -18,7 +18,7 @@ angular.module("ufcApp").controller('aboutCtrl', function($scope, mainService) {
         console.log(points);
     }
     console.log($scope.randomNum());
-    console.log($scope.champions)
+
 
     //
     // player 1
@@ -50,7 +50,7 @@ angular.module("ufcApp").controller('aboutCtrl', function($scope, mainService) {
           return "it was a draw!";
         }
     }
-// =============================================SHIT!======================================================
+    // =======================================DUAL_FUNCTION===========================================================
     // end of results
     $scope.endings = function() {
         var decision = $scope.randomNum();

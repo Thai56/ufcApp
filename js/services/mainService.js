@@ -23,7 +23,20 @@ console.log("this is the titleholders info" + response.data);
 
   }
 
+// getNews method
+
+this.getNews = function() {
+
+  return $http({
+      method:"GET",
+      url:"http://ufc-data-api.ufc.com/api/v1/us/news"
+    }).then(function(response){
+  console.log("this is the news info" + response.data);
+  return response.data;
+
+    })
 
 
-
+}
+// get news method
   })

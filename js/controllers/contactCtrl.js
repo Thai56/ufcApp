@@ -1,20 +1,16 @@
 angular.module("ufcApp").controller('contactCtrl',function($scope, mainService){
-  // get messages
-
-  // $scope.getMessages = function() {
-  //           mainService.getMessages().then(function(response) {
-  //               $scope.messages = response.data;
-  //           })
-  //       };
-  //       // post messages
-  //
-  // $scope.postMessage = function(message) {
-  //           mainService.postMessage(message);
-  //       };
-  //
-  //       //This goes and gets new data every second, which mimicking a chat room experience.
-  //       setInterval(function() {
-  //                 $scope.getMessages();
-  //             }, 1500)
+  mainService.getNews().then(function(response) {
+      $scope.getNews = response;
+      console.log(response);
+      // var myArray = [];
+      // for (i = 0; i < response.length; i++) {
+      //   myArray.push(response[i]);
+      //
+      //
+      // }
+      // console.log("this is response[i]" + response[i]);
+      // console.log("this is myArray" + myArray);
+      //   return myArray;
+  })
 
  })

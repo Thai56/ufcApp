@@ -1,5 +1,5 @@
 <html ng-app='ufcApp'>
-
+<!-- =================================HEAD============================================== -->
 <head>
     <meta charset="utf-8">
 
@@ -7,19 +7,33 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title></title>
 </head>
+<!-- =================================HEAD============================================== -->
 
+
+
+<!-- ===================================body========================================= -->
 <body ng-controller="mainCtrl">
 <!-- div container -->
 <div class="container">
     <!-- navbar optional-->
-    <nav class='navbar navbar-default'>
-        <ul>
+  
+
+
+      <header-directive></header-directive>
+
+<!-- ========================================firstHeader_before_headerDirective==================================================================== -->
+        <!-- <ul>
             <li> <a ui-sref="home">home</a></li>
             <li> <a ui-sref="about">about</a></li>
             <li> <a ui-sref="contact">contact</a></li>
-        </ul>
-    </nav>
+        </ul> -->
+<!-- ========================================firstHeader_before_headerDirective==================================================================== -->
+    
     <!-- end of navbar -->
+
+
+
+
 <!-- ufc cat image -->
     <img class="header-img" src="http://wallpaper.zone/img/718873.jpg" alt="" />
 
@@ -37,6 +51,8 @@
     <script src="js/controllers/aboutCtrl.js"></script>
     <script src="js/controllers/contactCtrl.js"></script>
     <script src="js/services/mainService.js"></script>
+    <script src="js/directives/directives.js"></script>
+
 </body>
 
 </html>

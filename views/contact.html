@@ -6,7 +6,17 @@
   <body>
     <button ui-sref="home" name="button">back to home</button>
     <!-- button back to home -->
-          </div>
+<!-- ng repeat -->
+<div ng-repeat="news in getNews">
+  <img src="{{news.thumbnail}}" alt="{{news.title}}" />
+<div>{{news.title}}</div>
+<div>{{news.article_date}}</div>
+<div>{{news.url_name}}</div>
+<div><a href="{{news.external_url}}">{{news.external_url}} </a></div>
+<!-- ng-repeat div  -->
+</div>
+
+
 
   </body>
 </html>

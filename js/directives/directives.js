@@ -1,14 +1,12 @@
-angular.module('ufcApp').directive('myDirective', function(){
-// this is not finished
-// trying to plug this directive into the home.html
-return {
-    templateUrl: 'home.html',
-    restrict: 'EA',
-    scope: {
-      fighterSearch: '=',
-      getFighters: '&'
-    },
+angular.module('ufcApp').directive('headerDirective', function() {
+    // this is not finished
+    // trying to plug this directive into the home.html
+    // ======================headerDirective=====================================================
+    return {
+        restrict: 'E',
+        templateUrl: "./views/headerTmpl.html"
+    }
 
+    // =========================headerDirective=====================================================
 
-    // this is the template
 })
