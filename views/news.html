@@ -4,7 +4,7 @@
     <title></title>
   </head>
   <body>
-    <button ui-sref="home" name="button">back to home</button>
+    <button ui-sref="home" class="btn btn-danger">back to home</button>
     <!-- button back to home -->
     <div class="container container-news">
 <!-- ng repeat -->
@@ -14,6 +14,8 @@
 <div class='gura'>{{news.article_date}}</div>
 <div class='gura'>{{news.url_name}}</div>
 <div><a href="{{news.external_url}}"><span style="font-size:25px">{{news.external_url}}</span></a></div>
+<input type="checkbox"><label class="lightgray"> &nbsp keep up with this event</label>
+<hr>
 <!-- ng-repeat div  -->
 </div>
 
