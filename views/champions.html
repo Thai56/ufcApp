@@ -7,32 +7,45 @@
 
 <body>
     <!-- champions/titleholders -->
-    <button ui-sref="home" name="button">back to home</button>
+    <button class="waves-effect waves-light btn-large #b71c1c" id="home-btn-champions" ui-sref="home" name="button">back to home</button><br>
+    <!-- searchbar -->
+    <div class="search-bar">
+    <!-- label for input -->
+    <label for="search_person"><span class="sho" id="large-med-text">enter fighter Name</span></label>
     <!-- button back to home -->
-    <input ng-model="fighterSearch"></input>
+    <input class="validate" id="search_person" ng-model="fighterSearch"></input>
     <!-- ng-input -->
-    <button ng-click="getFighters(fighterSearch)">search</button>
-<!-- button search -->
-<br>
-<span class="sho">player 1:{{playerOne.champion}} player 2:{{playerTwo.champion}} results: {{fightResults(playerOne,playerTwo,endings)}}</span>
+    <button class="waves-effect waves-light btn-large" id="champion-search-btn" ng-click="getFighters(fighterSearch)">search</button>
+    <!-- button search -->
+    </div>
+    <!-- searchbar -->
+    <br><br><br><br>
+<!-- ====================Fight Results===================================================================================================== -->
+    <hr>
+<!-- need to figure out a way to hide this function -->
+    <div class="sho"><span class="gold">player 1:</span>{{playerOne.champion}} <span class="gold">player 2:</span>{{playerTwo.champion}} <span class="gold">results:</span> {{fightResults(playerOne,playerTwo,endings)}}</div>
+    <!-- functions keeps displaying -->
+    <hr>
+<!-- ====================Fight Results=====================================================================================================     -->
     <div ng-repeat="champion in champions | filter: filter">
         <!-- div ng-repeat -->
         <div class="col-sm-4 col-md-3 col-lg-3 ">
-      <!-- columns bootstrap test -->
-        <img src="{{champion.belt_thumbnail}}" alt="" />
-        <div><span class="sho">{{champion.weight_class}}</span></div>
-        <div><span class="sho">{{champion.first_name}}</span></div>
-        <div><span class="sho">{{champion.wins}}</span></div>
-        <div><span class="sho">{{champion.losses}}</span></div>
-        <div class="hide">{{champion.id}}</span></div>
-<!-- <player1 button> -->
-        <button ng-click="player1(champion)" >player1</button>
-          <button ng-click="player2(champion)" >player2</button>
-          <button ng-click="fightResults(playerOne,playerTwo,endings)">fight</button>
-        <!-- <player 2 button> -->
-        <hr>
-<!-- columns bootstrap test -->
-      </div>
+            <!-- columns bootstrap test -->
+            <img src="{{champion.belt_thumbnail}}" alt="" />
+            <div><span class="sho">{{champion.weight_class}}</span></div>
+            <div><span class="sho">{{champion.first_name}} {{champion.last_name}}</span></div>
+            <div><span class="sho">{{champion.wins}}</span></div>
+            <div><span class="sho">{{champion.losses}}</span></div>
+            <div class="hide">{{champion.id}}</span>
+            </div>
+            <!-- <player1 button> -->
+            <button ng-click="player1(champion)">player1</button>
+            <button ng-click="player2(champion)">player2</button>
+            <button ng-click="fightResults(playerOne,playerTwo,endings)">fight</button>
+            <!-- <player 2 button> -->
+            <hr>
+            <!-- columns bootstrap test -->
+        </div>
         <!-- <ng-repeat -->
         <div>
 </body>

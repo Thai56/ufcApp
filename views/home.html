@@ -8,11 +8,16 @@
 
     <div class="container" >
     <!-- container -->
-    <input ng-model="fighterSearch"></input>
+    <div class="search-bar">
+    <!-- search-bar   -->
+    <label for="search_person"><span class="sho" id="large-med-text">enter fighter Name</span></label>
+    <input class="validate" id="search_person" ng-model="fighterSearch"></input>
     <!-- ng-input -->
-    <button ng-click="getFighters(fighterSearch)">search</button>
+    <button class="waves-effect waves-light btn-large" ng-click="getFighters(fighterSearch)" id="champion-search-btn">search</button>
 <!-- button search -->
-<br>
+<br><br><br><br>
+    <!-- searchbar div below -->
+    </div>
     <!-- <div class="jumbotron"> -->
       <!-- jumbotron -->
     <div class="fighter" ng-repeat="fighter in fighters| filter: filter">
