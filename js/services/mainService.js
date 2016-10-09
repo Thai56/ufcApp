@@ -39,4 +39,24 @@ this.getNews = function() {
 
 }
 // get news method
+
+// ========================randomJokes chuckNorris api==========================================================
+
+this.getJoke = function() {
+
+  return $http({
+      method:"GET",
+      url:"http://api.icndb.com/jokes/random"
+    }).then(function(response){
+  console.log("this is the joke info " + response.data.value.joke);
+  return response.data.value.joke;
+
+})
+
+}
+
+
+
+
+// ========================randomJokes chuckNorris api==========================================================
   })
