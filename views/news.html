@@ -4,19 +4,24 @@
     <title></title>
   </head>
   <body>
-    <button ui-sref="home" class="btn btn-danger" id="home-btn-champions">back to home</button>
-    <!-- button back to home -->
+    <!-- champions/titleholders -->
+    <h1 class="mix-it-small-head sho">LATEST NEWS</h1>
+    <!-- back to home button -->
+    <div>
+    <button class="btn btn-danger" id="home-btn-champions" ui-sref="home" name="button">back to home</button><br>
+    <!-- searchbar -->
+    </div><br>
     <div class="container container-news search-bar">
-<h1 class="sho">Latest News</h1>
 <!-- ng repeat -->
-<div ng-repeat="news in getNews">
+<div ng-repeat="news in getNews" class="news-align">
   <img src="{{news.thumbnail}}" alt="{{news.title}}" />
 <div class='gura'>{{news.title}}</div>
 <div class='gura'>{{news.article_date}}</div>
 <div class='gura'>{{news.url_name}}</div>
 <div><a href="{{news.external_url}}"><span style="font-size:25px">{{news.external_url}}</span></a></div>
-<input type="checkbox" id="test5"/><label for="test5" class="lightgray" id="large-med-text"> &nbsp keep up with this event</label>
-
+<div>
+  <input ng-click="checkedItems(news.title)" value='news.checkbox' ng-model ="news.checkbox" type="checkbox" id="test5"/><label for="test5" class="lightgray" id="large-med-text"> &nbsp keep up with this event</label>
+</div>
 
 
 
