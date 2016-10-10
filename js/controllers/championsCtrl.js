@@ -1,4 +1,5 @@
 angular.module("ufcApp").controller('championsCtrl', function($scope, mainService) {
+    $scope.shoResults = false;
 
     mainService.getTitleHolders().then(function(response) {
         $scope.champions = response;
@@ -38,6 +39,8 @@ angular.module("ufcApp").controller('championsCtrl', function($scope, mainServic
 
     // results
     $scope.fightResults = function(par1, par2, func) {
+
+      $scope.shoResults = true;
         if (par1.points > par2.points) {
             console.log(par2.champion +  func());
             return par2.champion + func();
@@ -75,6 +78,11 @@ angular.module("ufcApp").controller('championsCtrl', function($scope, mainServic
         }
         // end of else ifs
     }
+    // jquery
+
+
+
+    // jquery
 
 
 })

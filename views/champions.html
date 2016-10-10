@@ -10,27 +10,30 @@
     <h1 class="mix-it-small-head sho">CHAMPIONS</h1>
     <!-- back to home button -->
     <div>
-    <button class="btn btn-danger" id="home-btn-champions" ui-sref="home" name="button">back to home</button><br>
-    <!-- searchbar -->
-  </div><br>
+        <button class="btn btn-danger" id="home-btn-champions" ui-sref="home" name="button">back to home</button><br>
+        <!-- searchbar -->
+    </div><br>
     <div class="search-bar">
-    <!-- label for input -->
-    <label for="search_person"><span class="sho" id="large-med-text">enter fighter Name</span></label>
-    <!-- button back to home -->
-    <input class="validate" id="search_person" ng-model="fighterSearch"></input>
-    <!-- ng-input -->
-    <button class="waves-effect waves-light btn-large" id="champion-search-btn" ng-click="getFighters(fighterSearch)"><span class="sho">search</span></button>
-    <!-- button search -->
+        <!-- label for input -->
+        <label for="search_person"><span class="sho" id="large-med-text">enter fighter Name</span></label>
+        <!-- button back to home -->
+        <input class="validate font-med sho text-center red" id="red-text" ng-model="fighterSearch"></input>
+        <!-- ng-input -->
+        <button class="waves-effect waves-light btn-large" id="champion-search-btn" ng-click="getFighters(fighterSearch)"><span class="sho">search</span></button>
+        <!-- button search -->
     </div>
     <!-- searchbar -->
     <br><br><br><br>
-<!-- ====================Fight Results===================================================================================================== -->
+    <!-- ====================Fight Results===================================================================================================== -->
     <hr>
-<!-- need to figure out a way to hide this function -->
-    <div class="sho"><span class="gold">player 1:</span>{{playerOne.champion}} <span class="gold">player 2:</span>{{playerTwo.champion}} <span class="gold">results:</span> {{fightResults(playerOne,playerTwo,endings)}}</div>
-    <!-- functions keeps displaying -->
+    <!-- need to figure out a way to hide this function -->
+    <div class="sho">
+        <span class="gold">player 1:</span>{{playerOne.champion}}
+        <span class="gold">player 2:</span>{{playerTwo.champion}}
+        <span class="gold">results:</span> <span class="results" ng-if="shoResults">{{fightResults(playerOne,playerTwo,endings)}}</span></div>
+    <!-- function keeps displaying -->
     <hr>
-<!-- ====================Fight Results=====================================================================================================     -->
+    <!-- ====================Fight Results=====================================================================================================     -->
     <div ng-repeat="champion in champions | filter: filter">
         <!-- div ng-repeat -->
         <div class="col-sm-4 col-md-3 col-lg-3 ">
@@ -43,14 +46,14 @@
             <div class="hide">{{champion.id}}</span>
             </div>
             <div class="search-bar">
-            <!-- <player1 button> -->
-            <button id="blue" class="sho" style="color:white"ng-click="player1(champion)"><span id="black">player1</span></button>
-            <!-- <player 2 button> -->
-            <button id="red" class="sho" style="color:white"ng-click="player2(champion)"><span id="black">player2</span></button>
-            <!-- fight button -->
-            <button id="yellow" class="sho" style="color:white"ng-click="fightResults(playerOne,playerTwo,endings)"><span id="black">fight</span></button>
-            <hr>
-          </div>
+                <!-- <player1 button> -->
+                <button id="blue" class="sho" style="color:white" ng-click="player1(champion)"><span id="black">player1</span></button>
+                <!-- <player 2 button> -->
+                <button id="red" class="sho" style="color:white" ng-click="player2(champion)"><span id="black">player2</span></button>
+                <!-- fight button -->
+                <button id="yellow" class="sho sho-results" style="color:white" ng-click="fightResults(playerOne,playerTwo,endings)"><span id="black">fight</span></button>
+                <hr>
+            </div>
             <!-- columns bootstrap test -->
         </div>
         <!-- <ng-repeat -->

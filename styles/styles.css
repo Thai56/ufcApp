@@ -24,8 +24,13 @@
     background-size: cover;
 }
 
+
 .header-img {
     width: 100%;
+}
+.font-med {
+font-size: 2em !important;
+
 }
 
 .hide {
@@ -77,6 +82,9 @@
    background: linear-gradient(red, yellow, green); /* Standard syntax */
    color:#d50000;
 }
+.neon-green {
+  color:#96CB00;
+}
 .size-medium-small {
   font-size: 20px;
 }
@@ -84,9 +92,15 @@
 .search-bar {
     text-align: center;
 }
-
+.text-center {
+  text-align: center;
+}
 .validate {
     color: white;
+}
+#yellow-text {
+  color:EBCD54;
+
 }
 
 #home-btn-champions {
@@ -117,6 +131,9 @@
   border-color: black;
   /*float:right;*/
 }
+#red-text {
+   color:yellow !important;
+ }
 #yellow {
   background-color:EBCD54;
   border-color: black;

@@ -1,5 +1,6 @@
 <html ng-app='ufcApp'>
 <!-- =================================HEAD============================================== -->
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -12,36 +13,42 @@
 
 
 <!-- ===================================body========================================= -->
+
 <body class="body-container" ng-controller="mainCtrl">
-<!-- div container -->
-<div class="container">
-    <!-- navbar optional-->
+    <!-- div container -->
+    <div class="container">
+        <!-- navbar optional-->
 
 
 
-      <header-directive joke-alert="announceJoke(day)"></header-directive>
+        <header-directive joke-alert="announceJoke(day)"></header-directive>
 
-<!-- ========================================firstHeader_before_headerDirective==================================================================== -->
+        <!-- ========================================firstHeader_before_headerDirective==================================================================== -->
         <!-- <ul>
             <li> <a ui-sref="home">home</a></li>
             <li> <a ui-sref="champions">champions</a></li>
             <li> <a ui-sref="news">news</a></li>
         </ul> -->
-<!-- ========================================firstHeader_before_headerDirective==================================================================== -->
+        <!-- ========================================firstHeader_before_headerDirective==================================================================== -->
 
-    <!-- end of navbar -->
-
-
+        <!-- end of navbar -->
 
 
-<!-- ufc cat image -->
-    <img class="header-img" src="http://wallpaper.zone/img/718873.jpg" alt="" />
 
-    <ui-view></ui-view>
-<!-- div container -->
-</div>
+
+        <!-- ufc cat image -->
+        <img class="header-img" src="http://wallpaper.zone/img/718873.jpg" alt="" />
+
+        <ui-view></ui-view>
+        <!-- div container -->
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
     <!-- firebase  -->
+    <!-- jquery function for hiding the angular function -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- jquery function for hiding the angular function -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <!-- custom script files -->
