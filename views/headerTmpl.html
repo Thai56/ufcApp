@@ -1,12 +1,13 @@
-<header class="header">
-<h1 class="sho mix-it-header">myUFCApp.com</h1>
-    <nav class='navbar navbar-inverse'>
+<header class="header search-bar">
+<h1 class="sho mix-it-header">my<span id="UFC">UFC</span>App.com</h1>
+
+    <nav class='navbar navbar-inverse search-bar'>
         <ul class="nav">
-            <li class="home link"><button class="btn btn-danger" ui-sref='home'>Home</button></li>
-            <li class="champions link"><button class="btn btn-danger" ui-sref='champions'>champions</button></li>
-            <li class="news link"><button class="btn btn-danger" ui-sref='news'>news</button></li>
+            <li class="home link"><button class="btn btn-danger back-red" ui-sref='home'>Home</button></li>
+            <li class="champions link"><button class="btn btn-danger back-red" ui-sref='champions'>champions</button></li>
+            <li class="news link"><button class="btn btn-danger back-red" ui-sref='news'>news</button></li>
+            <button class="btn btn-warning back-red" id="left" ng-click='jokeAlert({day:joke})'>Learn More</button>
         </ul>
-        <button class="btn btn-warning" ng-click='jokeAlert({day:joke})'>Learn More</button>
       <!-- <input type="checkbox"> -->
       <!-- ================checkbox to use later on for favorites in news================================= -->
     </nav>

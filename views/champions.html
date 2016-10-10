@@ -7,7 +7,8 @@
 
 <body>
     <!-- champions/titleholders -->
-    <button class="waves-effect waves-light btn-large #b71c1c" id="home-btn-champions" ui-sref="home" name="button">back to home</button><br>
+    <!-- back to home button -->
+    <button class="btn btn-danger" id="home-btn-champions" ui-sref="home" name="button">back to home</button><br>
     <!-- searchbar -->
     <div class="search-bar">
     <!-- label for input -->
@@ -15,7 +16,7 @@
     <!-- button back to home -->
     <input class="validate" id="search_person" ng-model="fighterSearch"></input>
     <!-- ng-input -->
-    <button class="waves-effect waves-light btn-large" id="champion-search-btn" ng-click="getFighters(fighterSearch)">search</button>
+    <button class="waves-effect waves-light btn-large" id="champion-search-btn" ng-click="getFighters(fighterSearch)"><span class="sho">search</span></button>
     <!-- button search -->
     </div>
     <!-- searchbar -->
