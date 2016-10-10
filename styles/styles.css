@@ -97,3 +97,22 @@
   float: left;
   background-color: #b71c1c;
 }
+#blue {
+  background-color:blue;
+  border-color: black;
+}
+#red {
+  background-color:red;
+  border-color: black;
+  float:right;
+}
+#yellow {
+  background-color:yellow;
+  border-color: black;
+}
+#black {
+  color:black;
+}
+#right {
+  float:right;
+}
